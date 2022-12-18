@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fad76786-56d5-4e2d-9fdc-1aa24ff59cc8" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Han28DGoebbMU4or5V7chMtj2o" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/backend/plugins/element-ui" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\resources\backend\plugins\element-ui" />
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\java\com\example\pojo" />
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\java\com\example\common" />
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\java\com\example\dto" />
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\resources\backend\page\demo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\test\resources" />
+      <recent name="C:\Users\user\Java_WorkSpace\Reggie_TakeOut\src\main\java\com\example\controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.service.impl" />
+      <recent name="com.example.service" />
+      <recent name="com.example.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ReggieApplication">
+    <configuration name="TestFindCategoryId.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Reggie_TakeOut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.service" />
+      <option name="MAIN_CLASS_NAME" value="com.example.service.TestFindCategoryId" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReggieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Reggie_TakeOut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ReggieApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ReggieApplication" />
+        <item itemvalue="JUnit.TestFindCategoryId.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fad76786-56d5-4e2d-9fdc-1aa24ff59cc8" name="Changes" comment="" />
+      <created>1668531866482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668531866482</updated>
+      <workItem from="1668531869647" duration="3700000" />
+      <workItem from="1668602001710" duration="8456000" />
+      <workItem from="1668699595028" duration="12024000" />
+      <workItem from="1668962117257" duration="7754000" />
+      <workItem from="1669044903174" duration="8372000" />
+      <workItem from="1669131544453" duration="7663000" />
+      <workItem from="1669217507423" duration="9143000" />
+      <workItem from="1669567402365" duration="7776000" />
+      <workItem from="1669637860886" duration="9063000" />
+      <workItem from="1669719748883" duration="11415000" />
+      <workItem from="1669806127824" duration="7737000" />
+      <workItem from="1669896317710" duration="16949000" />
+      <workItem from="1669921829124" duration="785000" />
+      <workItem from="1670174800454" duration="8214000" />
+      <workItem from="1670239965841" duration="12780000" />
+      <workItem from="1670327973789" duration="8666000" />
+      <workItem from="1670418087247" duration="12706000" />
+      <workItem from="1670497342124" duration="9390000" />
+      <workItem from="1670781006176" duration="10149000" />
+      <workItem from="1670844554353" duration="7601000" />
+      <workItem from="1670966517520" duration="9152000" />
+      <workItem from="1671031994255" duration="17555000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
