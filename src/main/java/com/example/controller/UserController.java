@@ -8,6 +8,8 @@ import com.example.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @RestController
@@ -24,6 +27,8 @@ import java.util.Map;
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     //生成驗證碼
     @PostMapping("/sendMsg")
@@ -40,7 +45,12 @@ public class UserController {
             //SMSUtils.sendMessage("瑞吉外賣","",phone,code);
 
             //將生成的驗證碼保存至Session
-            session.setAttribute(phone,code);
+            //session.setAttribute(phone,code);
+
+            //優化方案:
+            //將生成的驗證碼保存至Redis，設置有效期為5分鐘
+            ValueOperations valueOperations = redisTemplate.opsForValue();
+            valueOperations.set(phone,code,5, TimeUnit.MINUTES);
 
             return R.success("手機短信驗證碼發送成功!");
         }
@@ -56,11 +66,18 @@ public class UserController {
         //1.獲取手機號和驗證碼
         String phone = map.get("phone").toString();
         String code = map.get("code").toString();
+
         //2.從Session中獲取保存的驗證碼
-        String codeInSession = session.getAttribute(phone).toString();
+        //String codeInSession = session.getAttribute(phone).toString();
+
+        //優化方案:
+        //2.從Redis中獲取緩存的驗證碼
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        Object codeInRedis = valueOperations.get(phone);
 
         //3.比對驗證碼
-        if(codeInSession != null && code.equals(codeInSession)){
+        //if(codeInSession != null && code.equals(codeInSession)){
+        if(codeInRedis != null && code.equals(codeInRedis)){
             //登錄成功
             //判斷當前手機號對應的用戶是否為新用戶，如果是新用戶則自動完成註冊
             User user = userService.selectUserByPhone(phone);
@@ -76,6 +93,9 @@ public class UserController {
             User user2 = userService.selectUserByPhone(phone);
             //將用戶id存入Session
             session.setAttribute("user",user2.getId());
+
+            //如果用戶登錄成功，刪除Redis中緩存的驗證碼
+            redisTemplate.delete(phone);
 
             return R.success(user);
         }
